@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+    <head>
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:url"                content="#" />
+        <meta property="og:title"              content="SociaLearn" />
+        <meta property="og:description"        content="Together We Excel" />
+        <meta property="og:image"              content="assets/img/og_img.jpg" />
+        <meta name="twitter:card"              content="summary_large_image">
+        <meta name="description"               content="SociaLearn" />
+        <meta name="keywords"                  content="SociaLearn" />
+   
+        <title> Dashboard - SociaLearn </title>
+
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+        <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" href="assets/img/favicon-192x192.png" type="image/x-icon" sizes="192x192">
+        <link rel="apple-touch-icon-precomposed" href="assets/img/favicon-512x512.png" type="image/x-icon" sizes="512x512">
+        <link rel="manifest" href="assets/img/site.webmanifest">
+        
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+        <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.simple-checkbox-table.min.js"></script>
+
+        <link rel="stylesheet" href="assets/css/pace-theme-minimal.css">
+    </head>
+  
+    <body class="sl-login-main d-flex flex-column min-vh-100">
+       
+        <div class="main-container d-flex">
+            <!-- Sidebar -->
+            <div class="sidebar sticky-top h-100 vh-100" id="side_nav">
+                <div class="header_box px-1 pt-3 d-flex justify-content-between">
+                    <h4 class="mx-auto fw-bold text-light">SOCIALEARN</h4>
+                    <button class="btn close-btn px-1 py-0 text-warning"><i class="far fa-stream fa-lg"></i></button>
+                </div>
+      
+               <div class="current-user px-3 pt-2 p-2 my-3 text-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="assets/img/defaults/default_avatar.jpg" class="rounded-circle">
+                        </div>
+                        <div class="col-12 label">
+                            <small class="text-light">You are currently logged in as:</small>
+                            <h5 class="current-name fw-bold text-light"> CLITO REYES </h5>
+                            <span class="badge text-bg-light mt-1">STUDENT</span>
+                        </div>
+                    </div>
+               </div>
+               
+               <hr class="text-light">
+
+                <ul class="list-unstyled px-2 pt-3">
+                    <li>
+                        <a href="dashboard.html" class="text-decoration-none px-2 py-2 d-block"><i class="fas fa-tachometer-alt fa-lg"></i> <span class="label">&nbsp; DASHBOARD</span> </a>
+                    </li>
+                    <li>
+                        <a href="announcements.html" class="text-decoration-none px-2 py-2 d-block"><i class="fas fa-books fa-lg"></i> <span class="label">&nbsp; MY COURSES</span> </a>
+                    </li>
+                    <li>
+                        <a href="faq.html" class="text-decoration-none px-2 py-2 d-block"><i class="fas fa-backpack fa-lg"></i> <span class="label">&nbsp; ENROLLED COURSES</span> </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="text-decoration-none px-2 py-2 d-block"><i class="fas fa-analytics fa-lg"></i> <span class="label">&nbsp; PROGRESS</span> </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="text-decoration-none px-2 py-2 d-block"><i class="fas fa-chart-network fa-lg"></i> <span class="label">&nbsp; NETWORK</span> </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="text-decoration-none px-2 py-2 d-block"><i class="fas fa-comments fa-lg"></i> <span class="label">&nbsp; CHAT</span> </a>
+                    </li>
+                    <li>
+                        <a href="settings_profile.html" class="text-decoration-none px-2 py-2 d-block"><i class="fas fa-user fa-lg"></i> <span class="label">&nbsp; MY PROFILE</span> </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End of Sidebar -->
+
+            <div class="content">
+                <!-- Header -->
+                <nav class="bta-header navbar navbar-expand-md">
+                    <div class="container-fluid">
+                        <div class="d-flex justify-content-between d-block">
+                            <button class="btn px-1 py-0 open-btn me-2 text-warning"><i class="fas fa-bars fa-lg"></i></button>  
+                        </div>
+                
+                        <ol class="bta-bcrumb breadcrumb mx-3 me-auto mb-1" aria-label="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page"><a href="dashboard.html">DASHBOARD</a></li>
+                        </ol>
+
+                        <!-- Notification Panel -->
+                        <div class="header-notif dropdown px-3">
+                            <button class="btn btn-sm btn-outline-light rounded-pill position-relative" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                <i class="fas fa-bell"></i>
+                                <!--<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"> 3 </span>-->
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end text-small shadow">
+                                <div class="container">
+                                    <h6 class="fw-bold"><span class="badge rounded-pill bta-badge-black mt-2 mb-2">YOUR NOTIFICATIONS</span></h6>
+
+                                    <nav class="bta-notifs-tab-menu mb-3">
+                                        <div class="nav nav-justified" id="pills-tab" role="tablist">
+                                          <button class="nav-link active" id="nav-cat1-tab" data-bs-toggle="pill" data-bs-target="#nav-tab1" type="button" role="tab" aria-controls="nav-tab1" aria-selected="true">ALL</button>
+                                          <button class="nav-link" id="nav-cat2-tab" data-bs-toggle="pill" data-bs-target="#nav-tab2" type="button" role="tab" aria-controls="nav-tab2" aria-selected="false">TICKETS</button>
+                                          <button class="nav-link" id="nav-cat3-tab" data-bs-toggle="pill" data-bs-target="#nav-tab3" type="button" role="tab" aria-controls="nav-tab3" aria-selected="false">USER</button>
+                                        </div>
+                                    </nav>
+                                      
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <!-- All -->
+                                        <div class="tab-pane fade show active" id="nav-tab1" role="tabpanel" aria-labelledby="nav-cat1-tab" tabindex="0">
+                                            <div class="bta-notifs-content my-2">
+                                                <div class="d-flex flex-column flex-md-row gap-4 align-items-center justify-content-center">
+                                                    <div class="bta-notifs-list list-group list-group-flush">
+                                                        <a href="tickets_view_general.html" class="list-group-item list-group-item-action d-flex gap-3 py-3 unread" aria-current="true">
+                                                            <div class="bta-notifs-symbol"><i class="fas fa-ticket-alt"></i></div>
+                                                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                                                <div class="bta-notifs-item">
+                                                                    <h6 class="fw-bold mb-0"> TICKETS </h6>
+                                                                    <h6>Ticket#2920 submitted</h6>
+                                                                </div>
+                                                                <small class="opacity-50 text-nowrap">now</small>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="settings_profile.html" class="list-group-item list-group-item-action d-flex gap-3 py-3 unread" aria-current="true">
+                                                            <div class="bta-notifs-symbol"><i class="fas fa-user-cog"></i></div>
+                                                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                                                <div class="bta-notifs-item">
+                                                                    <h6 class="fw-bold mb-0"> USER </h6>
+                                                                    <h6>Account Settings has been updated.</h6>
+                                                                </div>
+                                                                <small class="opacity-50 text-nowrap">4d</small>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="announcements_view.html" class="list-group-item list-group-item-action d-flex gap-3 py-3 unread" aria-current="true">
+                                                            <div class="bta-notifs-symbol"><i class="fas fa-bullhorn"></i></div>
+                                                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                                                <div class="bta-notifs-item">
+                                                                    <h6 class="fw-bold mb-0"> ANNOUNCEMENT </h6>
+                                                                    <h6>Re: 3 Days Transport Strike</h6>
+                                                                </div>
+                                                                <small class="opacity-50 text-nowrap">4d</small>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="tickets_view_result.html" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                                                            <div class="bta-notifs-symbol"><i class="fas fa-ticket-alt"></i></div>
+                                                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                                                <div class="bta-notifs-item">
+                                                                    <h6 class="fw-bold mb-0"> TICKETS </h6>
+                                                                    <h6>Ticket#1002 has been verified.</h6>
+                                                                </div>
+                                                                <small class="opacity-50 text-nowrap">6d</small>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="settings_profile.html" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                                                            <div class="bta-notifs-symbol"><i class="fas fa-user-cog"></i></div>
+                                                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                                                <div class="bta-notifs-item">
+                                                                    <h6 class="fw-bold mb-0"> USER </h6>
+                                                                    <h6>Success! Password Changed.</h6>
+                                                                </div>
+                                                                <small class="opacity-50 text-nowrap">9d</small>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="tickets_view_attachments.html" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                                                            <div class="bta-notifs-symbol"><i class="fas fa-ticket-alt"></i></div>
+                                                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                                                <div class="bta-notifs-item">
+                                                                    <h6 class="fw-bold mb-0"> TICKETS </h6>
+                                                                    <h6>Ticket#810 needs additional documents.</h6>
+                                                                </div>
+                                                                <small class="opacity-50 text-nowrap">10d</small>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Tickets Only -->
+                                        <div class="tab-pane fade" id="nav-tab2" role="tabpanel" aria-labelledby="nav-cat2-tab" tabindex="0">
+                                            <div class="bta-notifs-content my-2">
+                                                <div class="d-flex flex-column flex-md-row gap-4 align-items-center justify-content-center">
+                                                    <div class="bta-notifs-list list-group list-group-flush">
+                                                        <a href="tickets_view_general.html" class="list-group-item list-group-item-action d-flex gap-3 py-3 unread" aria-current="true">
+                                                            <div class="bta-notifs-symbol"><i class="fas fa-ticket-alt"></i></div>
+                                                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                                                <div class="bta-notifs-item">
+                                                                    <h6 class="fw-bold mb-0"> TICKETS </h6>
+                                                                    <h6>Ticket#2920 submitted</h6>
+                                                                </div>
+                                                                <small class="opacity-50 text-nowrap">now</small>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="tickets_view_result.html" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                                                            <div class="bta-notifs-symbol"><i class="fas fa-ticket-alt"></i></div>
+                                                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                                                <div class="bta-notifs-item">
+                                                                    <h6 class="fw-bold mb-0"> TICKETS </h6>
+                                                                    <h6>Ticket#1002 has been verified.</h6>
+                                                                </div>
+                                                                <small class="opacity-50 text-nowrap">6d</small>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="tickets_view_attachments.html" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                                                            <div class="bta-notifs-symbol"><i class="fas fa-ticket-alt"></i></div>
+                                                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                                                <div class="bta-notifs-item">
+                                                                    <h6 class="fw-bold mb-0"> TICKETS </h6>
+                                                                    <h6>Ticket#810 needs additional documents.</h6>
+                                                                </div>
+                                                                <small class="opacity-50 text-nowrap">10d</small>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- User-Related Only -->
+                                        <div class="tab-pane fade" id="nav-tab3" role="tabpanel" aria-labelledby="nav-cat3-tab" tabindex="0">
+                                            <div class="bta-notifs-content my-2">
+                                                <div class="d-flex flex-column flex-md-row gap-4 align-items-center justify-content-center">
+                                                    <div class="bta-notifs-list list-group list-group-flush">
+                                                        <a href="settings_profile.html" class="list-group-item list-group-item-action d-flex gap-3 py-3 unread" aria-current="true">
+                                                            <div class="bta-notifs-symbol"><i class="fas fa-user-cog"></i></div>
+                                                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                                                <div class="bta-notifs-item">
+                                                                    <h6 class="fw-bold mb-0"> USER </h6>
+                                                                    <h6>Account Settings has been updated.</h6>
+                                                                </div>
+                                                                <small class="opacity-50 text-nowrap">4d</small>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="settings_profile.html" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+                                                            <div class="bta-notifs-symbol"><i class="fas fa-user-cog"></i></div>
+                                                            <div class="d-flex gap-2 w-100 justify-content-between">
+                                                                <div class="bta-notifs-item">
+                                                                    <h6 class="fw-bold mb-0"> USER </h6>
+                                                                    <h6>Success! Password Changed.</h6>
+                                                                </div>
+                                                                <small class="opacity-50 text-nowrap">9d</small>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Button: See All -->
+                                        <a class="btn btn-sm bta-btn-black rounded-5 fw-bold w-100 my-2" href="notifications.html" type="button"><i class="fas fa-caret-right"></i> See All </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- User Panel -->
+                        <div class="header-user dropdown me-1">
+                            <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                              <img src="assets/img/defaults/default_avatar.jpg" class="header-avatar rounded-circle">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end text-small shadow">
+                                <div class="container">
+                                    <!-- User Profile Info -->
+                                        <div class="justify-content-center text-center my-2 mb-3">
+                                            <img src="assets/img/defaults/default_avatar.jpg" class="header-avatar-inside rounded-circle shadow mb-2">
+                                            <h6 class="current-name fw-bold"> ENGELBERT M. </h6>
+                                            <h6><span class="current-role badge rounded-pill bg-dark"> VERIFIER </span></h6>
+                                        </div>
+                                    <hr class="dropdown-divider">
+                                    <!-- Selection --> 
+                                            <div class="bta-dropdown-shortcuts mx-auto mb-2">                   
+                                                <li><a class="dropdown-item fw-bold" href="settings_profile.html"><i class="fas fa-user-cog"></i> MY PROFILE</a>
+                                                <li><a class="dropdown-item fw-bold" href="settings_audit.html"><i class="fas fa-history"></i> AUDIT LOGS</a>
+                                            </div>
+                                    <!-- Logout Button -->
+                                    <a class="btn btn-sm bta-btn-red rounded-5 fw-bold w-100 mt-3 mb-2" href="index.html" type="button"> <i class="fas fa-sign-out-alt"></i> Logout </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- End of Header -->
+
+                <div class="container-fluid px-lg-5 p-3 min-vh-100">
+                <!-- Start of Content -->
+
+                    <h4 class="fw-bold"> <span class="badge text-bg-dark">MY COURSES</span> </h4>
+
+                    <div class="row my-4">
+                        <div class="col-md-4">
+                            <div class="card shadow">
+                                <a href="#">
+                                    <div class="card-thumbnail">
+                                        <img src="assets/img/defaults/login.png" class="card-img-top">
+                                    </div>
+                                </a>
+                                <div class="card-body">
+                                    <div class="course-details">
+                                        <small class="fw-semibold">Web Development</small>
+                                        <h5 class="card-title fw-bold">Introduction to HTML and CSS</h5><hr>
+                                        <p>Lorem ipsum dolor sit amet..</p>
+                                        <span class="badge text-bg-dark">Beginner</span>
+                                    </div>
+                    
+                                    <div class="course-other-details text-muted mt-3">
+                                        <small><i class="fas fa-user-friends"></i> &nbsp; 150 </small>
+                                        <small><i class="fas fa-star"></i> &nbsp; 4.5 </small>
+                                        <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 </small>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn btn-sm btn-dark"><i class="fas fa-caret-right"></i>&nbsp; Go To Course</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow">
+                                <a href="#">
+                                    <div class="card-thumbnail">
+                                        <img src="assets/img/defaults/login.png" class="card-img-top">
+                                    </div>
+                                </a>
+                                <div class="card-body">
+                                    <div class="course-details">
+                                        <small class="fw-semibold">Web Development</small>
+                                        <h5 class="card-title fw-bold">Introduction to HTML and CSS</h5><hr>
+                                        <p>Lorem ipsum dolor sit amet..</p>
+                                        <span class="badge text-bg-dark">Beginner</span>
+                                    </div>
+                    
+                                    <div class="course-other-details text-muted mt-3">
+                                        <small><i class="fas fa-user-friends"></i> &nbsp; 150 </small>
+                                        <small><i class="fas fa-star"></i> &nbsp; 4.5 </small>
+                                        <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 </small>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn btn-sm btn-dark"><i class="fas fa-caret-right"></i>&nbsp; Go To Course</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card shadow">
+                                <a href="#">
+                                    <div class="card-thumbnail">
+                                        <img src="assets/img/defaults/login.png" class="card-img-top">
+                                    </div>
+                                </a>
+                                <div class="card-body">
+                                    <div class="course-details">
+                                        <small class="fw-semibold">Web Development</small>
+                                        <h5 class="card-title fw-bold">Introduction to HTML and CSS</h5><hr>
+                                        <p>Lorem ipsum dolor sit amet..</p>
+                                        <span class="badge text-bg-dark">Beginner</span>
+                                    </div>
+                    
+                                    <div class="course-other-details text-muted mt-3">
+                                        <small><i class="fas fa-user-friends"></i> &nbsp; 150 </small>
+                                        <small><i class="fas fa-star"></i> &nbsp; 4.5 </small>
+                                        <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 </small>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn btn-sm btn-dark"><i class="fas fa-caret-right"></i>&nbsp; Go To Course</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                        
+    
+                <!-- End of Content -->
+                </div>
+
+                <!-- Start of Footer -->
+                <footer class="bta-footer-main mt-auto">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-12" style="margin-top: 40px;">
+                                <a href="https://www.ust.edu.ph" target="_blank"><img class="img-fluid mx-auto d-block mb-3" src="assets/img/logo/ust_footer.png" alt="University of Santo Tomas" title="University of Santo Tomas" width="300"></a>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-12" style="margin-top: 40px;">
+                                <a href="https://registrar.ust.edu.ph" target="_blank"><img class="img-fluid mx-auto d-block mb-4" src="assets/img/logo/registrar logo 3.png" alt="UST Office of the Registrar" title="UST Office of the Registrar" width="350"></a>
+                            </div>
+                            <div class="col-xl-2 col-lg-6 col-md-6 col-12" style="border-left: 1px solid #333; border-right: 1px solid #333;">
+                                <h5 class="text-warning fw-bold" style="font-size: 13px;">EXPLORE</h5>
+                                <ul class="list-unstyled text-small" style="font-size: 11px; color: #c0c0c0;">
+                                    <li class="mb-1"><i class="fas fa-bullhorn"></i>&nbsp; <a class="link-light text-decoration-none" href="announcements.html"> Announcements</a></li>
+                                    <li class="mb-1"><i class="fas fa-comments-alt"></i>&nbsp; <a class="link-light text-decoration-none" href="faq.html"> FAQ</a></li>
+                                    <li class="mb-1"><i class="fas fa-info-circle"></i>&nbsp; <a class="link-light text-decoration-none" href="about.html"> About</a></li>
+                                    <li class="mb-1"><i class="fas fa-file-contract"></i>&nbsp; <a class="link-light text-decoration-none" href="terms_and_conditions.html"> Terms & Conditions</a></li>
+                                    <li class="mb-1"><i class="fas fa-user-shield"></i>&nbsp; <a class="link-light text-decoration-none" href="privacy.html"> Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                                <h5 class="text-warning fw-bold" style="font-size: 13px;">OFFICE OF THE REGISTRAR</h5>
+                                <ul class="list-unstyled text-small" style="font-size: 11px; color: #c0c0c0;">
+                                    <li class="mb-1"><i class="fas fa-home"></i>&nbsp; 2nd floor Main Bldg, University of Santo Tomas España, Manila C-1015</li>
+                                    <li class="mb-1"><i class="fas fa-clock"></i>&nbsp; Operation Hours: 8:00 am to 5:00 pm, Monday to Friday</li>
+                                    <li class="mb-1"><i class="fas fa-phone-alt"></i>&nbsp; (632) 8880-1611 Loc. 8216</li>
+                                    <li class="mb-1"><i class="far fa-globe"></i>&nbsp; <a class="link-warning text-decoration-none" href="https://registrar.ust.edu.ph" target="_blank">registrar.ust.edu.ph </a></li>
+                                    <li class="mb-1"><i class="fas fa-envelope"></i>&nbsp; <a class="link-warning text-decoration-none" href="mailto:registrar.office@ust.edu.ph" target="_blank">registrar.office@ust.edu.ph</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            
+                <footer class="bta-footer-under">
+                    <small class="d-block">&copy; 2023 Developed for UST Office of the Registrar. Powered by <b>Beyond The Arch.</b> </small>
+                </footer>
+                <!-- End of Footer -->
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assets/js/jquery-3.6.0.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/js/custom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       
+    </body>
+</html>
