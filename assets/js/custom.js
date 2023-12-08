@@ -1,5 +1,4 @@
 const navLinks = document.querySelectorAll(".sidebar li");
-const navCollapse = document.querySelectorAll(".sidebar .bta-collapse li");
 const url = window.location.href;
 
 if (url.includes("dashboard")) {
@@ -14,14 +13,11 @@ if (url.includes("dashboard")) {
 } else if (url.includes("courses_all")) {
   navLinks[3].classList.add("active");
 
-} else if (url.includes("progress")) {
+} else if (url.includes("network")) {
   navLinks[4].classList.add("active");
 
-} else if (url.includes("network")) {
-  navLinks[5].classList.add("active");
-
 } else if (url.includes("profile")) {
-  navLinks[6].classList.add("active");
+  navLinks[5].classList.add("active");
 
 } else {
   // navLinks[0].classList.remove("active");
