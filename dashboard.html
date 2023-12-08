@@ -24,18 +24,9 @@
         
         <link rel="stylesheet" href="assets/css/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
-
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
         <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-        <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
-        <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
-        <script type="text/javascript" src="assets/js/jquery.simple-checkbox-table.min.js"></script>
-
         <link rel="stylesheet" href="assets/css/pace-theme-minimal.css">
     </head>
   
@@ -89,7 +80,7 @@
 
             <div class="content">
                 <!-- Header -->
-                <nav class="bta-header navbar navbar-expand-md">
+                <nav class="sl-header navbar navbar-expand-md">
                     <div class="container-fluid">
                         <div class="d-flex justify-content-between d-block">
                             <button class="btn px-1 py-0 open-btn me-2 text-light"><i class="fas fa-bars fa-lg"></i></button>  
@@ -155,114 +146,113 @@
                 <div class="container-fluid px-lg-5 p-3 min-vh-100">
                 <!-- Start of Content -->
 
-                <div class="courses_my my-4">
-                    <h3 class="fw-bold"> <span class="badge text-bg-dark">MY COURSES</span> </h4>
+                    <div class="courses_my my-4">
+                        <h3 class="fw-bold"> <span class="badge text-bg-dark">MY COURSES</span> </h4>
 
-                    <div class="row my-4">
-                        <!-- Course Card -->
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-                            <div class="card shadow">
-                                <a href="courses_my_view.html">
-                                    <div class="card-thumbnail">
-                                        <img src="assets/img/cards/card_1.png" class="card-img-top">
+                        <div class="row my-4">
+                            <!-- Course Card -->
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                <div class="card shadow">
+                                    <a href="courses_my_view.html">
+                                        <div class="card-thumbnail">
+                                            <img src="assets/img/cards/card_1.png" class="card-img-top">
+                                        </div>
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="course-details">
+                                            <small class="fw-semibold text-success">Web Development</small>
+                                            <h5 class="card-title fw-bold">Introduction to HTML and CSS</h5><hr>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                                            <span class="badge text-bg-dark">Beginner</span>
+                                        </div>
+                        
+                                        <div class="course-other-details text-muted mt-3">
+                                            <small><i class="fas fa-user-friends"></i> 150 &nbsp; </small> 
+                                            <small><i class="fas fa-star"></i> 4.5 &nbsp; </small> 
+                                            <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 &nbsp; </small> 
+                                        </div>
                                     </div>
-                                </a>
-                                <div class="card-body">
-                                    <div class="course-details">
-                                        <small class="fw-semibold text-success">Web Development</small>
-                                        <h5 class="card-title fw-bold">Introduction to HTML and CSS</h5><hr>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
-                                        <span class="badge text-bg-dark">Beginner</span>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                <div class="card shadow">
+                                    <a href="courses_my_view.html">
+                                        <div class="card-thumbnail">
+                                            <img src="assets/img/cards/card_2.png" class="card-img-top">
+                                        </div>
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="course-details">
+                                            <small class="fw-semibold text-success">Data Science</small>
+                                            <h5 class="card-title fw-bold">Data Analysis and Python</h5><hr>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                                            <span class="badge text-bg-dark">Intermediate</span>
+                                        </div>
+                        
+                                        <div class="course-other-details text-muted mt-3">
+                                            <small><i class="fas fa-user-friends"></i> 150 &nbsp; </small> 
+                                            <small><i class="fas fa-star"></i> 4.5 &nbsp; </small> 
+                                            <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 &nbsp; </small> 
+                                        </div>
                                     </div>
-                    
-                                    <div class="course-other-details text-muted mt-3">
-                                        <small><i class="fas fa-user-friends"></i> 150 &nbsp; </small> 
-                                        <small><i class="fas fa-star"></i> 4.5 &nbsp; </small> 
-                                        <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 &nbsp; </small> 
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                <div class="card shadow">
+                                    <a href="courses_my_view.html">
+                                        <div class="card-thumbnail">
+                                            <img src="assets/img/cards/card_3.png" class="card-img-top">
+                                        </div>
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="course-details">
+                                            <small class="fw-semibold text-success">Graphic Design</small>
+                                            <h5 class="card-title fw-bold">Adobe Photoshop Essentials</h5><hr>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                                            <span class="badge text-bg-dark">Advanced</span>
+                                        </div>
+                        
+                                        <div class="course-other-details text-muted mt-3">
+                                            <small><i class="fas fa-user-friends"></i> 150 &nbsp; </small> 
+                                            <small><i class="fas fa-star"></i> 4.5 &nbsp; </small> 
+                                            <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 &nbsp; </small> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                <div class="card shadow">
+                                    <a href="courses_my_view.html">
+                                        <div class="card-thumbnail">
+                                            <img src="assets/img/cards/card_4.jpg" class="card-img-top">
+                                        </div>
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="course-details">
+                                            <small class="fw-semibold text-success">Mobile App Development</small>
+                                            <h5 class="card-title fw-bold">Introduction to Android Studio</h5><hr>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                                            <span class="badge text-bg-dark">Intermediate</span>
+                                        </div>
+                        
+                                        <div class="course-other-details text-muted mt-3">
+                                            <small><i class="fas fa-user-friends"></i> 150 &nbsp; </small> 
+                                            <small><i class="fas fa-star"></i> 4.5 &nbsp; </small> 
+                                            <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 &nbsp; </small> 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-                            <div class="card shadow">
-                                <a href="courses_my_view.html">
-                                    <div class="card-thumbnail">
-                                        <img src="assets/img/cards/card_2.png" class="card-img-top">
-                                    </div>
-                                </a>
-                                <div class="card-body">
-                                    <div class="course-details">
-                                        <small class="fw-semibold text-success">Data Science</small>
-                                        <h5 class="card-title fw-bold">Data Analysis and Python</h5><hr>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
-                                        <span class="badge text-bg-dark">Intermediate</span>
-                                    </div>
-                    
-                                    <div class="course-other-details text-muted mt-3">
-                                        <small><i class="fas fa-user-friends"></i> 150 &nbsp; </small> 
-                                        <small><i class="fas fa-star"></i> 4.5 &nbsp; </small> 
-                                        <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 &nbsp; </small> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-                            <div class="card shadow">
-                                <a href="courses_my_view.html">
-                                    <div class="card-thumbnail">
-                                        <img src="assets/img/cards/card_3.png" class="card-img-top">
-                                    </div>
-                                </a>
-                                <div class="card-body">
-                                    <div class="course-details">
-                                        <small class="fw-semibold text-success">Graphic Design</small>
-                                        <h5 class="card-title fw-bold">Adobe Photoshop Essentials</h5><hr>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
-                                        <span class="badge text-bg-dark">Advanced</span>
-                                    </div>
-                    
-                                    <div class="course-other-details text-muted mt-3">
-                                        <small><i class="fas fa-user-friends"></i> 150 &nbsp; </small> 
-                                        <small><i class="fas fa-star"></i> 4.5 &nbsp; </small> 
-                                        <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 &nbsp; </small> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-                            <div class="card shadow">
-                                <a href="courses_my_view.html">
-                                    <div class="card-thumbnail">
-                                        <img src="assets/img/cards/card_4.jpg" class="card-img-top">
-                                    </div>
-                                </a>
-                                <div class="card-body">
-                                    <div class="course-details">
-                                        <small class="fw-semibold text-success">Mobile App Development</small>
-                                        <h5 class="card-title fw-bold">Introduction to Android Studio</h5><hr>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
-                                        <span class="badge text-bg-dark">Intermediate</span>
-                                    </div>
-                    
-                                    <div class="course-other-details text-muted mt-3">
-                                        <small><i class="fas fa-user-friends"></i> 150 &nbsp; </small> 
-                                        <small><i class="fas fa-star"></i> 4.5 &nbsp; </small> 
-                                        <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 &nbsp; </small> 
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="d-flex justify-content-end">
+                            <a href="courses_my.html" class="btn bg-success text-light fw-bold">VIEW ALL</a>
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-end">
-                        <a href="courses_my.html" class="btn bg-success text-light fw-bold">VIEW ALL</a>
-                    </div>
-                </div>
-
- 
                     <div class="row">
                         <!-- Enrolled Courses -->
                         <div class="col-md-6 courses_enrolled my-4">
@@ -500,47 +490,53 @@
                                     </div>
                                 </div>
                             </div>
-                          
+                        
                             <div class="d-flex justify-content-end">
                                 <a href="courses_enrolled.html" class="btn bg-success text-light fw-bold">VIEW ALL</a>
                             </div>
                         </div>
                     </div>
 
-
                 <!-- End of Content -->
                 </div>
 
                 <!-- Start of Footer -->
-                <footer class="bta-footer-main mt-auto">
+                <footer class="sl-footer-main mt-auto">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-12">
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-12">
                                 <a href="#"><img class="img-fluid d-block mx-auto mb-2" src="assets/img/defaults/login-logo-white.png" alt="SocialLearn" title="SocialLearn" width="80"></a>
                                 <p class="d-block text-center mb-3">&copy; 2023 SociaLearn</p>
                             </div>
-                            <div class="col-xl-2 col-lg-6 col-md-6 col-12">
-                                <h5 class="text-light fw-bold">EXPLORE</h5>
+                            <div class="col-xl-1 col-lg-6 col-md-6 col-6">
+                                <h5 class="text-light fw-bold">COURSES</h5>
                                 <ul class="list-unstyled text-small">
                                     <li class="mb-1"><a class="link-light text-decoration-none" href="courses_my.html"> My Courses</a></li>
                                     <li class="mb-1"><a class="link-light text-decoration-none" href="courses_enrolled.html"> Enrolled Courses</a></li>
                                     <li class="mb-1"><a class="link-light text-decoration-none" href="courses_enrolled.html"> All Courses</a></li>
-                                    <li class="mb-1"><a class="link-light text-decoration-none" href="network.html"> Network</a></li>
                                 </ul>
                             </div>  
-                            <div class="col-xl-2 col-lg-6 col-md-6 col-12">
-                                <h5 class="text-light fw-bold">GET IN TOUCH WITH US</h5>
+                            <div class="col-xl-1 col-lg-6 col-md-6 col-6">
+                                <h5 class="text-light fw-bold">PROFILE</h5>
                                 <ul class="list-unstyled text-small">
-                                    <li class="mb-1"><i class="fab fa-facebook"></i>&nbsp; <a class="link-light text-decoration-none" href="https://www.facebook.com"> Facebook</a></li>
-                                    <li class="mb-1"><i class="fab fa-instagram"></i>&nbsp; <a class="link-light text-decoration-none" href="https://www.instagram.com"> Instagram</a></li>
-                                    <li class="mb-1"><i class="fas fa-envelope"></i>&nbsp; <a class="link-light text-decoration-none" href="mailto:socialearn@gmail.com"> socialearn@gmail.com</a></li>
+                                    <li class="mb-1"><a class="link-light text-decoration-none" href="network.html"> Network</a></li>
+                                    <li class="mb-1"><a class="link-light text-decoration-none" href="profile.html"> My Profile</a></li>
                                 </ul>
                             </div>
-                            <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-12 mb-3">
                                 <h4 class="text-light fw-bold">TOGETHER WE EXCEL</h4>
                                 <small>SociaLearn is a cutting-edge e-learning web platform that redefines the online learning experience. Designed to foster collaboration and engagement, 
                                 SociaLearn seamlessly integrates social elements into the learning process, creating a vibrant community of learners.</small>
                             </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                                <h5 class="text-light fw-bold">GET IN TOUCH WITH US</h5>
+                                <ul class="list-unstyled text-small">
+                                    <li class="mb-1"><i class="fab fa-facebook fa-lg"></i>&nbsp; <a class="link-light text-decoration-none" href="https://www.facebook.com"> Facebook</a></li>
+                                    <li class="mb-1"><i class="fab fa-youtube fa-lg"></i>&nbsp; <a class="link-light text-decoration-none" href="https://www.youtube.com"> YouTube</a></li>
+                                    <li class="mb-1"><i class="fab fa-instagram fa-lg"></i>&nbsp; <a class="link-light text-decoration-none" href="https://www.instagram.com"> Instagram</a></li>
+                                    <li class="mb-1"><i class="fas fa-envelope fa-lg"></i>&nbsp; <a class="link-light text-decoration-none" href="mailto:socialearn@gmail.com"> socialearn@gmail.com</a></li>
+                                </ul>
+                            </div> 
                         </div>
                     </div>
                 </footer>
@@ -552,7 +548,6 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <script type="text/javascript" src="assets/js/custom.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
        
     </body>
 </html>

@@ -15,7 +15,7 @@ body {
 }
 
 .sl-login-left {
-    background-color: #34662c;
+    background-color: #243a20;
 	background-repeat: no-repeat;
   	background-position: bottom right;
 	background-size: contain;
@@ -31,7 +31,7 @@ body {
 
 /* Header */
 
-.bta-header {
+.sl-header {
 	background-color: #314d2c;
 	position: sticky !important;
 	z-index: 99 !important;
@@ -456,7 +456,7 @@ body {
 
 /* Footer */
 
-.bta-footer-main {
+.sl-footer-main {
 	background-color: #0e160d;
 	overflow: hidden;
 	width: 100%;
@@ -465,7 +465,7 @@ body {
 	font-size: 13px;
 }
 
-.bta-footer-main h5 {
+.sl-footer-main h5 {
 	font-size: 15px;
 }
 
