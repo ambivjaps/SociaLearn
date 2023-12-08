@@ -11,14 +11,17 @@ if (url.includes("dashboard")) {
 } else if (url.includes("courses_enrolled")) {
   navLinks[2].classList.add("active");
 
-} else if (url.includes("progress")) {
+} else if (url.includes("courses_all")) {
   navLinks[3].classList.add("active");
 
-} else if (url.includes("network")) {
+} else if (url.includes("progress")) {
   navLinks[4].classList.add("active");
 
-} else if (url.includes("profile")) {
+} else if (url.includes("network")) {
   navLinks[5].classList.add("active");
+
+} else if (url.includes("profile")) {
+  navLinks[6].classList.add("active");
 
 } else {
   // navLinks[0].classList.remove("active");
