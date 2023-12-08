@@ -32,7 +32,7 @@ body {
 /* Header */
 
 .bta-header {
-	background-color: #446640;
+	background-color: #314d2c;
 	position: sticky !important;
 	z-index: 99 !important;
 	top: 0;
@@ -605,18 +605,13 @@ body {
 }
 
 .header-avatar-inside {
-	width: 60px;
-	height: 60px;
+	width: 70px;
+	height: 70px;
 	object-fit: cover;
 }
 
 .header-notif .dropdown-menu {
 	width: 400px;
-}
-
-.dropdown-menu {
-	border-radius: 15px !important;
-	animation:  transitionInContainer 0.20s;
 }
 
 .dropdown-menu:before {
@@ -861,59 +856,6 @@ input[type=checkbox]:checked{
 	background-color: #404040;
     color: #f5bb00;
    	border-color: #404040 !important;
-}
-
-/* Ticket Status */
-
-.ticket-completed {
-	background-color: #2d6e34;
-}
-
-.ticket-pending {
-	background-color: #803c67;
-}
-
-.ticket-inpro {
-	background-color: #1a549c;
-}
-
-.ticket-onhold {
-	background-color: #505050;
-}
-
-/* Buttons */
-
-.bta-btn-black {
-	background-color: #000000 !important;
-	color: #FFFFFF !important;
-	border-radius: 20px !important;
-}
-
-.bta-btn-black:hover {
-	background-color: #202020 !important;
-}
-
-.bta-btn-red {
-	background-color: #880000 !important;
-	color: #FFFFFF !important;
-}
-
-.bta-btn-red:hover {
-	background-color: #a50000 !important;
-}
-
-.bta-btn-green {
-	background-color: #2d6e34 !important;
-	color: #FFFFFF !important;
-}
-
-.bta-btn-green:hover {
-	background-color: #347c3b !important;
-}
-
-.bta-badge-black {
-	background-color: #000000 !important;
-	color: #f5bb00 !important;
 }
 
 .bta-btn-correspondence {

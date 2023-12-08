@@ -99,201 +99,23 @@
                                 <div class="time mx-3 me-auto mb-1 text-light">Today is: December 8, 2023 </div>
                             </p>
 
-                        <!-- Notification Panel -->
-                        <div class="header-notif dropdown px-3">
-                            <button class="btn btn-sm btn-light rounded-pill position-relative" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                                <i class="fas fa-bell"></i>
-                                <!--<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"> 3 </span>-->
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-end text-small shadow">
-                                <div class="container">
-                                    <h6 class="fw-bold"><span class="badge rounded-pill bta-badge-black mt-2 mb-2">YOUR NOTIFICATIONS</span></h6>
-
-                                    <nav class="bta-notifs-tab-menu mb-3">
-                                        <div class="nav nav-justified" id="pills-tab" role="tablist">
-                                          <button class="nav-link active" id="nav-cat1-tab" data-bs-toggle="pill" data-bs-target="#nav-tab1" type="button" role="tab" aria-controls="nav-tab1" aria-selected="true">ALL</button>
-                                          <button class="nav-link" id="nav-cat2-tab" data-bs-toggle="pill" data-bs-target="#nav-tab2" type="button" role="tab" aria-controls="nav-tab2" aria-selected="false">TICKETS</button>
-                                          <button class="nav-link" id="nav-cat3-tab" data-bs-toggle="pill" data-bs-target="#nav-tab3" type="button" role="tab" aria-controls="nav-tab3" aria-selected="false">USER</button>
-                                        </div>
-                                    </nav>
-                                      
-                                    <div class="tab-content" id="nav-tabContent">
-                                        <!-- All -->
-                                        <div class="tab-pane fade show active" id="nav-tab1" role="tabpanel" aria-labelledby="nav-cat1-tab" tabindex="0">
-                                            <div class="bta-notifs-content my-2">
-                                                <div class="d-flex flex-column flex-md-row gap-4 align-items-center justify-content-center">
-                                                    <div class="bta-notifs-list list-group list-group-flush">
-                                                        <a href="tickets_view_general.html" class="list-group-item list-group-item-action d-flex gap-3 py-3 unread" aria-current="true">
-                                                            <div class="bta-notifs-symbol"><i class="fas fa-ticket-alt"></i></div>
-                                                            <div class="d-flex gap-2 w-100 justify-content-between">
-                                                                <div class="bta-notifs-item">
-                                                                    <h6 class="fw-bold mb-0"> TICKETS </h6>
-                                                                    <h6>Ticket#2920 submitted</h6>
-                                                                </div>
-                                                                <small class="opacity-50 text-nowrap">now</small>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="settings_profile.html" class="list-group-item list-group-item-action d-flex gap-3 py-3 unread" aria-current="true">
-                                                            <div class="bta-notifs-symbol"><i class="fas fa-user-cog"></i></div>
-                                                            <div class="d-flex gap-2 w-100 justify-content-between">
-                                                                <div class="bta-notifs-item">
-                                                                    <h6 class="fw-bold mb-0"> USER </h6>
-                                                                    <h6>Account Settings has been updated.</h6>
-                                                                </div>
-                                                                <small class="opacity-50 text-nowrap">4d</small>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="announcements_view.html" class="list-group-item list-group-item-action d-flex gap-3 py-3 unread" aria-current="true">
-                                                            <div class="bta-notifs-symbol"><i class="fas fa-bullhorn"></i></div>
-                                                            <div class="d-flex gap-2 w-100 justify-content-between">
-                                                                <div class="bta-notifs-item">
-                                                                    <h6 class="fw-bold mb-0"> ANNOUNCEMENT </h6>
-                                                                    <h6>Re: 3 Days Transport Strike</h6>
-                                                                </div>
-                                                                <small class="opacity-50 text-nowrap">4d</small>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="tickets_view_result.html" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                                                            <div class="bta-notifs-symbol"><i class="fas fa-ticket-alt"></i></div>
-                                                            <div class="d-flex gap-2 w-100 justify-content-between">
-                                                                <div class="bta-notifs-item">
-                                                                    <h6 class="fw-bold mb-0"> TICKETS </h6>
-                                                                    <h6>Ticket#1002 has been verified.</h6>
-                                                                </div>
-                                                                <small class="opacity-50 text-nowrap">6d</small>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="settings_profile.html" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                                                            <div class="bta-notifs-symbol"><i class="fas fa-user-cog"></i></div>
-                                                            <div class="d-flex gap-2 w-100 justify-content-between">
-                                                                <div class="bta-notifs-item">
-                                                                    <h6 class="fw-bold mb-0"> USER </h6>
-                                                                    <h6>Success! Password Changed.</h6>
-                                                                </div>
-                                                                <small class="opacity-50 text-nowrap">9d</small>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="tickets_view_attachments.html" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                                                            <div class="bta-notifs-symbol"><i class="fas fa-ticket-alt"></i></div>
-                                                            <div class="d-flex gap-2 w-100 justify-content-between">
-                                                                <div class="bta-notifs-item">
-                                                                    <h6 class="fw-bold mb-0"> TICKETS </h6>
-                                                                    <h6>Ticket#810 needs additional documents.</h6>
-                                                                </div>
-                                                                <small class="opacity-50 text-nowrap">10d</small>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Tickets Only -->
-                                        <div class="tab-pane fade" id="nav-tab2" role="tabpanel" aria-labelledby="nav-cat2-tab" tabindex="0">
-                                            <div class="bta-notifs-content my-2">
-                                                <div class="d-flex flex-column flex-md-row gap-4 align-items-center justify-content-center">
-                                                    <div class="bta-notifs-list list-group list-group-flush">
-                                                        <a href="tickets_view_general.html" class="list-group-item list-group-item-action d-flex gap-3 py-3 unread" aria-current="true">
-                                                            <div class="bta-notifs-symbol"><i class="fas fa-ticket-alt"></i></div>
-                                                            <div class="d-flex gap-2 w-100 justify-content-between">
-                                                                <div class="bta-notifs-item">
-                                                                    <h6 class="fw-bold mb-0"> TICKETS </h6>
-                                                                    <h6>Ticket#2920 submitted</h6>
-                                                                </div>
-                                                                <small class="opacity-50 text-nowrap">now</small>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="tickets_view_result.html" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                                                            <div class="bta-notifs-symbol"><i class="fas fa-ticket-alt"></i></div>
-                                                            <div class="d-flex gap-2 w-100 justify-content-between">
-                                                                <div class="bta-notifs-item">
-                                                                    <h6 class="fw-bold mb-0"> TICKETS </h6>
-                                                                    <h6>Ticket#1002 has been verified.</h6>
-                                                                </div>
-                                                                <small class="opacity-50 text-nowrap">6d</small>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="tickets_view_attachments.html" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                                                            <div class="bta-notifs-symbol"><i class="fas fa-ticket-alt"></i></div>
-                                                            <div class="d-flex gap-2 w-100 justify-content-between">
-                                                                <div class="bta-notifs-item">
-                                                                    <h6 class="fw-bold mb-0"> TICKETS </h6>
-                                                                    <h6>Ticket#810 needs additional documents.</h6>
-                                                                </div>
-                                                                <small class="opacity-50 text-nowrap">10d</small>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- User-Related Only -->
-                                        <div class="tab-pane fade" id="nav-tab3" role="tabpanel" aria-labelledby="nav-cat3-tab" tabindex="0">
-                                            <div class="bta-notifs-content my-2">
-                                                <div class="d-flex flex-column flex-md-row gap-4 align-items-center justify-content-center">
-                                                    <div class="bta-notifs-list list-group list-group-flush">
-                                                        <a href="settings_profile.html" class="list-group-item list-group-item-action d-flex gap-3 py-3 unread" aria-current="true">
-                                                            <div class="bta-notifs-symbol"><i class="fas fa-user-cog"></i></div>
-                                                            <div class="d-flex gap-2 w-100 justify-content-between">
-                                                                <div class="bta-notifs-item">
-                                                                    <h6 class="fw-bold mb-0"> USER </h6>
-                                                                    <h6>Account Settings has been updated.</h6>
-                                                                </div>
-                                                                <small class="opacity-50 text-nowrap">4d</small>
-                                                            </div>
-                                                        </a>
-
-                                                        <a href="settings_profile.html" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
-                                                            <div class="bta-notifs-symbol"><i class="fas fa-user-cog"></i></div>
-                                                            <div class="d-flex gap-2 w-100 justify-content-between">
-                                                                <div class="bta-notifs-item">
-                                                                    <h6 class="fw-bold mb-0"> USER </h6>
-                                                                    <h6>Success! Password Changed.</h6>
-                                                                </div>
-                                                                <small class="opacity-50 text-nowrap">9d</small>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Button: See All -->
-                                        <a class="btn btn-sm bta-btn-black rounded-5 fw-bold w-100 my-2" href="notifications.html" type="button"><i class="fas fa-caret-right"></i> See All </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- User Panel -->
+                        <!-- Account -->
                         <div class="header-user dropdown me-1">
                             <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                               <img src="assets/img/defaults/default_avatar.jpg" class="header-avatar rounded-circle">
                             </a>
-                            <div class="dropdown-menu dropdown-menu-end text-small shadow">
+                            <div class="dropdown-menu dropdown-menu-end text-small">
                                 <div class="container">
-                                    <!-- User Profile Info -->
-                                        <div class="justify-content-center text-center my-2 mb-3">
-                                            <img src="assets/img/defaults/default_avatar.jpg" class="header-avatar-inside rounded-circle shadow mb-2">
-                                            <h6 class="current-name fw-bold"> ENGELBERT M. </h6>
-                                            <h6><span class="current-role badge rounded-pill bg-dark"> VERIFIER </span></h6>
-                                        </div>
-                                    <hr class="dropdown-divider">
-                                    <!-- Selection --> 
-                                            <div class="bta-dropdown-shortcuts mx-auto mb-2">                   
-                                                <li><a class="dropdown-item fw-bold" href="settings_profile.html"><i class="fas fa-user-cog"></i> MY PROFILE</a>
-                                                <li><a class="dropdown-item fw-bold" href="settings_audit.html"><i class="fas fa-history"></i> AUDIT LOGS</a>
+                                        <div class="row my-3">
+                                            <div class="col-4">
+                                                <img src="assets/img/defaults/default_avatar.jpg" class="header-avatar-inside rounded-circle">
                                             </div>
-                                    <!-- Logout Button -->
-                                    <a class="btn btn-sm bta-btn-red rounded-5 fw-bold w-100 mt-3 mb-2" href="index.html" type="button"> <i class="fas fa-sign-out-alt"></i> Logout </a>
+                                            <div class="col-8">
+                                                <h6 class="current-name fw-bold"> CLITO REYES </h6>
+                                                <span class="badge text-bg-dark">STUDENT</span>
+                                            </div>
+                                        </div><hr>
+                                    <a class="btn btn-sm btn-danger fw-bold w-50 float-end mb-2" href="index.html" type="button"> <i class="fas fa-sign-out-alt"></i> Logout </a>
                                 </div>
                             </div>
                         </div>
