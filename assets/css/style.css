@@ -30,8 +30,9 @@ body {
 }
 
 .sl-register-right {
-	background-image: url("../img/defaults/login.png");
+	background-image: url("../img/defaults/register.png");
     background-repeat: no-repeat;
+	background-position: bottom center;
 	background-size: cover;
 }
 
