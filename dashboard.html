@@ -66,7 +66,7 @@
 
                 <ul class="list-unstyled px-2 pt-3">
                     <li>
-                        <a href="dashboard.html" class="text-decoration-none px-2 py-2 d-block"><i class="fas fa-tachometer-alt fa-lg"></i> <span class="label">&nbsp; DASHBOARD</span> </a>
+                        <a href="dashboard.html" class="text-decoration-none px-2 py-2 d-block"><i class="fas fa-home fa-lg"></i> <span class="label">&nbsp; DASHBOARD</span> </a>
                     </li>
                     <li>
                         <a href="courses_my.html" class="text-decoration-none px-2 py-2 d-block"><i class="fas fa-books fa-lg"></i> <span class="label">&nbsp; MY COURSES</span> </a>
@@ -301,9 +301,10 @@
                 </nav>
                 <!-- End of Header -->
 
-                <div class="container-fluid px-lg-5 p-3 mt-3 min-vh-100">
+                <div class="container-fluid px-lg-5 p-3 min-vh-100">
                 <!-- Start of Content -->
 
+                <div class="courses_my my-4">
                     <h4 class="fw-bold"> <span class="badge text-bg-dark">MY COURSES</span> </h4>
 
                     <div class="row my-4">
@@ -317,9 +318,9 @@
                                 </a>
                                 <div class="card-body">
                                     <div class="course-details">
-                                        <small class="fw-semibold">Web Development</small>
+                                        <small class="fw-semibold text-success">Web Development</small>
                                         <h5 class="card-title fw-bold">Introduction to HTML and CSS</h5><hr>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
                                         <span class="badge text-bg-dark">Beginner</span>
                                     </div>
                     
@@ -346,9 +347,9 @@
                                 </a>
                                 <div class="card-body">
                                     <div class="course-details">
-                                        <small class="fw-semibold">Data Science</small>
+                                        <small class="fw-semibold text-success">Data Science</small>
                                         <h5 class="card-title fw-bold">Data Analysis and Python</h5><hr>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
                                         <span class="badge text-bg-dark">Intermediate</span>
                                     </div>
                     
@@ -375,9 +376,9 @@
                                 </a>
                                 <div class="card-body">
                                     <div class="course-details">
-                                        <small class="fw-semibold">Graphic Design</small>
+                                        <small class="fw-semibold text-success">Graphic Design</small>
                                         <h5 class="card-title fw-bold">Adobe Photoshop Essentials</h5><hr>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
                                         <span class="badge text-bg-dark">Advanced</span>
                                     </div>
                     
@@ -404,9 +405,9 @@
                                 </a>
                                 <div class="card-body">
                                     <div class="course-details">
-                                        <small class="fw-semibold">Mobile App Development</small>
+                                        <small class="fw-semibold text-success">Mobile App Development</small>
                                         <h5 class="card-title fw-bold">Introduction to Android Studio</h5><hr>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
                                         <span class="badge text-bg-dark">Intermediate</span>
                                     </div>
                     
@@ -425,9 +426,138 @@
                         </div>
                     </div>
 
+                    <div class="d-flex justify-content-end">
+                        <a href="courses_my.html" class="btn bg-success text-light fw-bold">VIEW ALL COURSES</a>
+                    </div>
+                </div>
+
+                <div class="courses_enrolled my-4">
                     <h4 class="fw-bold"> <span class="badge text-bg-dark">ENROLLED COURSES</span> </h4>
+
+                    <div class="row my-4">
+                        <!-- Course Card -->
+                        <div class="col-md-3">
+                            <div class="card shadow">
+                                <a href="courses_my_view.html">
+                                    <div class="card-thumbnail">
+                                        <img src="assets/img/defaults/card_1.png" class="card-img-top">
+                                    </div>
+                                </a>
+                                <div class="card-body">
+                                    <div class="course-details">
+                                        <small class="fw-semibold text-success">Web Development</small>
+                                        <h5 class="card-title fw-bold">Introduction to HTML and CSS</h5><hr>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                                        <span class="badge text-bg-dark">Beginner</span>
+                                    </div>
                     
-              
+                                    <div class="course-other-details text-muted mt-3">
+                                        <small><i class="fas fa-user-friends"></i> 150 &nbsp; </small> 
+                                        <small><i class="fas fa-star"></i> 4.5 &nbsp; </small> 
+                                        <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 &nbsp; </small> 
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-flex justify-content-end">
+                                        <a href="courses_my_view.html" class="btn btn-sm btn-dark"><i class="fas fa-caret-right"></i>&nbsp; Go To Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card shadow">
+                                <a href="courses_my_view.html">
+                                    <div class="card-thumbnail">
+                                        <img src="assets/img/defaults/card_2.png" class="card-img-top">
+                                    </div>
+                                </a>
+                                <div class="card-body">
+                                    <div class="course-details">
+                                        <small class="fw-semibold text-success">Data Science</small>
+                                        <h5 class="card-title fw-bold">Data Analysis and Python</h5><hr>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                                        <span class="badge text-bg-dark">Intermediate</span>
+                                    </div>
+                    
+                                    <div class="course-other-details text-muted mt-3">
+                                        <small><i class="fas fa-user-friends"></i> 150 &nbsp; </small> 
+                                        <small><i class="fas fa-star"></i> 4.5 &nbsp; </small> 
+                                        <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 &nbsp; </small> 
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-flex justify-content-end">
+                                        <a href="courses_my_view.html" class="btn btn-sm btn-dark"><i class="fas fa-caret-right"></i>&nbsp; Go To Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card shadow">
+                                <a href="courses_my_view.html">
+                                    <div class="card-thumbnail">
+                                        <img src="assets/img/defaults/card_3.png" class="card-img-top">
+                                    </div>
+                                </a>
+                                <div class="card-body">
+                                    <div class="course-details">
+                                        <small class="fw-semibold text-success">Graphic Design</small>
+                                        <h5 class="card-title fw-bold">Adobe Photoshop Essentials</h5><hr>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                                        <span class="badge text-bg-dark">Advanced</span>
+                                    </div>
+                    
+                                    <div class="course-other-details text-muted mt-3">
+                                        <small><i class="fas fa-user-friends"></i> 150 &nbsp; </small> 
+                                        <small><i class="fas fa-star"></i> 4.5 &nbsp; </small> 
+                                        <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 &nbsp; </small> 
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-flex justify-content-end">
+                                        <a href="courses_my_view.html" class="btn btn-sm btn-dark"><i class="fas fa-caret-right"></i>&nbsp; Go To Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card shadow">
+                                <a href="courses_my_view.html">
+                                    <div class="card-thumbnail">
+                                        <img src="assets/img/defaults/card_4.jpg" class="card-img-top">
+                                    </div>
+                                </a>
+                                <div class="card-body">
+                                    <div class="course-details">
+                                        <small class="fw-semibold text-success">Mobile App Development</small>
+                                        <h5 class="card-title fw-bold">Introduction to Android Studio</h5><hr>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                                        <span class="badge text-bg-dark">Intermediate</span>
+                                    </div>
+                    
+                                    <div class="course-other-details text-muted mt-3">
+                                        <small><i class="fas fa-user-friends"></i> 150 &nbsp; </small> 
+                                        <small><i class="fas fa-star"></i> 4.5 &nbsp; </small> 
+                                        <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 &nbsp; </small> 
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="d-flex justify-content-end">
+                                        <a href="courses_my_view.html" class="btn btn-sm btn-dark"><i class="fas fa-caret-right"></i>&nbsp; Go To Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-end">
+                        <a href="courses_my.html" class="btn bg-success text-light fw-bold">VIEW ALL COURSES</a>
+                    </div>
+                </div>
+
                 <!-- End of Content -->
                 </div>
 

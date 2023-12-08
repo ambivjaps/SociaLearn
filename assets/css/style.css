@@ -5,6 +5,7 @@ body {
 	color: #000000 !important;
 	margin: 0;
 	padding: 0;
+	background-color: #eeeeee !important;
 }
 
 /* Login */
@@ -465,6 +466,7 @@ body {
 /* Components */
 
 .card {
+	border-radius: 15px !important;
 	margin-bottom: 20px;
 	border: none !important;
 }
@@ -474,7 +476,7 @@ body {
 }
 
 .card-thumbnail {
-    max-height: 200px;
+    max-height: 180px;
     overflow: hidden;
 }
 
