@@ -31,3 +31,11 @@ if (url.includes("dashboard")) {
 } else {
   // navLinks[0].classList.remove("active");
 }
+
+$('.open-btn').on('click', function() {
+  $('.sidebar').toggleClass('toggled');
+});
+
+$('.close-btn').on('click', function() {
+  $('.sidebar').removeClass('toggled');
+});

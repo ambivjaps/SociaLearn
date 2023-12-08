@@ -450,7 +450,7 @@ body {
 /* Footer */
 
 .bta-footer-main {
-	background-color: #151515;
+	background-color: #0e160d;
 	overflow: hidden;
 	width: 100%;
 	color: #FFFFFF;
@@ -460,15 +460,6 @@ body {
 
 .bta-footer-main h5 {
 	font-size: 15px;
-}
-
-.bta-footer-under {
-	background-color: #000000;
-	overflow: hidden;
-	width: 100%;
-	text-align: center;
-	color: #E8BF00;
-	padding: 4px;
 }
 
 /* Components */
