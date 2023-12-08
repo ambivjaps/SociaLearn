@@ -29,6 +29,12 @@ body {
 	background-size: cover;
 }
 
+.sl-register-right {
+	background-image: url("../img/defaults/login.png");
+    background-repeat: no-repeat;
+	background-size: cover;
+}
+
 /* Header */
 
 .sl-header {
