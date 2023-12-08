@@ -42,7 +42,7 @@ body {
 /* Side Bar */
 
 .header_box {
-	background-color: #446640;	
+	background-color: #243a20;	
 	height: 56px;
 }
 
@@ -487,6 +487,25 @@ body {
 }
 
 .card-thumbnail:hover {
+    opacity: 0.8;
+    transition: 0.4s all;
+}
+
+.card-thumbnail-left {
+    max-width: 300px;
+	max-height: 250px;
+    overflow: hidden;
+	border-radius: 15px;
+}
+
+.card-thumbnail-left img {
+	width: 300px;
+	height: 250px;
+	object-fit: cover;
+	object-position: 50% 100%;
+}
+
+.card-thumbnail-left:hover {
     opacity: 0.8;
     transition: 0.4s all;
 }
@@ -977,72 +996,13 @@ input[type=checkbox]:checked{
     border-radius: 3px;
 }
 
-/* Breadcrumb */
-
-.bta-bcrumb .breadcrumb-item, .bta-bcrumb .breadcrumb-item a {
-	color: #757575;
-	font-weight: 600;
-	font-size: 15px;
-	text-decoration: none;
-}
-
-.bta-bcrumb .breadcrumb-item a:hover {
-	color: #b3b3b3;
-}
-
-.bta-bcrumb .breadcrumb-item.active a {
-	color: #FFFFFF;
-}
-
-.bta-bcrumb .breadcrumb-item.active a:hover {
-	color: rgb(255, 227, 100);
-}
-
-.bta-bcrumb .breadcrumb-item + .breadcrumb-item::before {
-	content: '▶';
-	font-weight: bold; 
-	color: #FFFFFF; 
-}
-
 @media(max-width: 767px) {
-	.bta-bcrumb .breadcrumb-item a {
-		display: none;
-	}
-
-	.bta-bcrumb .breadcrumb-item.active a {
-		display: initial;
-	}
-	
-	.bta-bcrumb .breadcrumb-item + .breadcrumb-item::before {
+	.time {
 		display: none;
 	}
 }
 
 /* Animations */
-
-@keyframes transitionInBanner{
-	from {
-		opacity: 0;
-		transform:  rotateY(-15deg);
-	}
-
-	to {
-		opacity: 1;
-		transform: rotateY(0);
-	}
-}
-
-@keyframes transitionInContainer {
-	from {
-		opacity: 0;
-		transform:  rotateX(-25deg);
-	}
-
-	to {
-		opacity: 1;
-		transform: rotateX(0);
-	}
-}
 
 @keyframes transitionSide {
 	from {
