@@ -416,21 +416,18 @@ body {
     transition: 0.4s all;
 }
 
-.course-heading {
+.course-heading, .profile-heading {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 10px;
-
 	color: #FFFFFF;
 }
 
-.bta-head-1 {
-	flex-direction: row !important;
-}
-
-.table-row {
-	cursor: pointer;
+.profile-banner img {
+	object-fit: cover;
+	width: 150px;
+	height: 150px;
 }
 
 .field-req label:after {
@@ -438,11 +435,6 @@ body {
     content: ' *';
     display: inline;
 	font-weight: bold;
-}
-
-.ticket-ins {
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 
 .verify-icon {
