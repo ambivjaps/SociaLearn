@@ -607,6 +607,20 @@ textarea {
 	}
 }
 
+.breadcrumb a {
+	color: #000000;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.breadcrumb a:hover, .breadcrumb .active a:hover {
+	color: #78a570;
+}
+
+.breadcrumb .active a {
+	color: #375c31;
+}
+
 /* Animations */
 
 @keyframes transitionSide {
