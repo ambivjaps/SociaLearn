@@ -416,6 +416,15 @@ body {
     transition: 0.4s all;
 }
 
+.course-heading {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+
+	color: #FFFFFF;
+}
+
 .bta-head-1 {
 	flex-direction: row !important;
 }
