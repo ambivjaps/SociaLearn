@@ -619,7 +619,7 @@ textarea {
 .breadcrumb a {
 	color: #000000;
 	text-decoration: none;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 14px;
 }
 
@@ -629,6 +629,7 @@ textarea {
 
 .breadcrumb .active a {
 	color: #375c31;
+	font-weight: 800;
 }
 
 /* Animations */
