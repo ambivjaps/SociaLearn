@@ -138,9 +138,9 @@
 
                         <div class="profile-content p-4">
                             <div class="d-flex justify-content-start">
-                                <button class="btn btn-sm btn-dark me-1">Edit Profile</button>
-                                <button class="btn btn-sm btn-dark me-1">Change Password</button>
-                                <button class="btn btn-sm btn-dark">Change E-mail Address</button>
+                                <button class="btn btn-sm btn-dark me-1" data-bs-toggle="modal" data-bs-target="#editProfile">Edit Profile</button>
+                                <button class="btn btn-sm btn-dark me-1" data-bs-toggle="modal" data-bs-target="#changePwd">Change Password</button>
+                                <button class="btn btn-sm btn-dark" data-bs-toggle="modal" data-bs-target="#changeEmail">Change E-mail Address</button>
                             </div>
                             
                             <div class="profile-body my-4">
@@ -190,6 +190,161 @@
                 </div>
 
                 <!-- End of Content -->
+                </div>
+
+                <!-- Edit Profile Modal -->
+                <div class="modal fade" id="editProfile" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fw-bold fs-5" id="staticBackdropLabel">Edit Profile</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <form method="#" action="#">
+                                <div class="row">
+                                    <div class="col-md-12 my-2">
+                                        <div class="current-header">
+                                            <label>Current Profile Picture Used: </label><br>
+                                            <img src="assets/img/defaults/default_avatar.jpg" class="img-fluid rounded-circle profile-current-preview"><br>
+                                        </div>
+                                        <div class="change-header">
+                                            <label class="mt-3"> Change Profile Picture: </label>
+                                            <input class="form-control" type="file" id="formFile">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 my-2">
+                                        <label> Last Name: *</label>
+                                        <input type="text" name="#" id="#" class="form-control rounded" value="REYES" required>
+                                    </div>
+                                    <div class="col-md-12 my-2">
+                                        <label> First Name: *</label>
+                                        <input type="text" name="#" id="#" class="form-control rounded" value="CLITO" required>
+                                    </div>
+                                    <div class="col-md-12 my-2">
+                                        <label> Middle Name: *</label>
+                                        <input type="text" name="#" id="#" class="form-control rounded" value="MANALASTAS" required>
+                                    </div>
+                                    <div class="col-md-12 my-2">
+                                        <label> Address: *</label>
+                                        <input type="text" name="#" id="#" class="form-control rounded" value="20-F Biak Na Bato, Sta. Mesa Heights, Quezon City, 1114" required>
+                                    </div>
+                                    <div class="col-md-12 my-2">
+                                        <label> School/Institution Affiliated With: *</label>
+                                        <input type="text" name="#" id="#" class="form-control rounded" value="University of Santo Tomas" required>
+                                    </div>
+                                    <div class="col-md-12 my-2">
+                                        <label> Birthday: *</label>
+                                        <input type="date" name="#" id="#" class="form-control rounded" value="05-19-1999" required>
+                                    </div>
+                                    <div class="col-md-12 my-2">
+                                        <label> Gender: *</label>
+                                        <select class="form-select rounded" name="#" id="#" required>
+                                            <option value="">Select Gender</option>
+                                            <option value="Male" selected>Male</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Prefer not to say">Prefer not to say</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-sm btn-success rounded-pill fw-bold me-1" type="submit"> Save Changes</button>
+                            <button class="btn btn-sm btn-danger rounded-pill fw-bold" type="button" data-bs-dismiss="modal">Close</button>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Change Password Modal -->
+                <div class="modal fade" id="changePwd" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fw-bold fs-5" id="staticBackdropLabel">Change Password</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="alert alert-secondary" role="alert">
+                                <h5 class="alert-heading fw-bold">Password Guidelines</h5>
+                                <div class="pwd-guidelines" style="font-size: 12px;">
+                                    <ul> 
+                                        <li>8-20 characters</li>
+                                        <li>At least one (1) lowercase letter </li>
+                                        <li>At least one (1) capital letter</li>
+                                        <li>At least one (1) number</li>
+                                        <li>No spaces</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <form method="#" action="#">
+                                <div class="row">
+                                    <div class="col-md-12 my-2">
+                                        <label> Enter your current password: </label>
+                                        <input type="password" name="#" id="#" class="form-control rounded" required>
+                                    </div>
+                                    <div class="col-md-12 my-2">
+                                        <hr><label> Enter your new password: </label>
+                                        <input type="password" name="#" id="#" class="form-control rounded" required>
+                                    </div>
+                                    <div class="col-md-12 my-2">
+                                        <label> Confirm your new password: </label>
+                                        <input type="password" name="#" id="#" class="form-control rounded" required>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-sm btn-success rounded-pill fw-bold me-1" type="submit"> Save Changes</button>
+                            <button class="btn btn-sm btn-danger rounded-pill fw-bold" type="button" data-bs-dismiss="modal">Close</button>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Change E-mail Modal -->
+                <div class="modal fade" id="changeEmail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fw-bold fs-5" id="staticBackdropLabel">Change E-mail Address</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <form method="#" action="#">
+                                <div class="row">
+                                    <div class="col-md-12 my-2">
+                                        <label> Current E-mail Address:</label>
+                                        <h5 class="fw-bold">clitoreyes@gmail.com</h5>
+                                    </div>
+                                    <div class="col-md-12 my-2">
+                                        <label> Enter your new E-mail Address: </label>
+                                        <input type="email" name="#" id="#" class="form-control rounded" required>
+                                    </div>
+                                    <div class="col-md-12 my-2">
+                                        <label> Confirm your new E-mail Address: </label>
+                                        <input type="email" name="#" id="#" class="form-control rounded" required>
+                                    </div>
+                                    <div class="col-md-12 my-2">
+                                        <label> Enter your password to save changes: </label>
+                                        <input type="password" name="#" id="#" class="form-control rounded" required>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-sm btn-success rounded-pill fw-bold me-1" type="submit"> Save Changes</button>
+                            <button class="btn btn-sm btn-danger rounded-pill fw-bold" type="button" data-bs-dismiss="modal">Close</button>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
                 </div>
 
                 <!-- Start of Footer -->

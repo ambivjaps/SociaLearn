@@ -426,13 +426,19 @@ body {
 
 .course-header-preview {
 	object-fit: cover;
-	width: 150px;
-	height: 150px;
+	height: 50px;
 }
 
 .profile-banner img {
 	object-fit: cover;
-	height: 50px;
+	width: 150px;
+	height: 150px;
+}
+
+.profile-current-preview {
+	object-fit: cover;
+	height: 100px;
+	width: 100px;
 }
 
 .field-req label:after {
