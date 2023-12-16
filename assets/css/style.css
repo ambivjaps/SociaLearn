@@ -498,13 +498,13 @@ textarea {
 
 /* Table */
 
-.bta-table {
+.sl-table {
 	font-size: 14px;
 }
 
-.bta-table th {
-	background-color: #000000 !important;
-	color: #f5bb00 !important;
+.sl-table th {
+	background-color: #243a20 !important;
+	color: #FFFFFF !important;
 }
 
 /* Pagination */

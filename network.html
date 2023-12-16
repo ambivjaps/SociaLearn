@@ -28,6 +28,10 @@
         <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
         <link rel="stylesheet" href="assets/css/pace-theme-minimal.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+        <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
     </head>
   
     <body class="sl-login-main d-flex flex-column min-vh-100">
@@ -117,6 +121,106 @@
                 <div class="container-fluid px-lg-5 p-3 min-vh-100">
                 <!-- Start of Content -->
 
+                <div class="profile my-4">
+
+                    <div class="p-1 pt-3 px-4 mb-4 bg-body-tertiary rounded-2">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="network.html">Network</a></li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <div class="table-responsive mt-3 mb-5">
+                        <table class="table sl-table" id="sl-network">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Profile Picture</th>
+                                    <th>Name</th>
+                                    <th>E-mail Address</th>
+                                    <th># of Courses Enrolled</th>
+                                    <th># of Courses Teaching</th>
+                                    <th class="text-end">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>100</td>
+                                    <td><img src="assets/img/defaults/default_avatar.jpg" width="100"></td>
+                                    <td>Humpty Dumpty</td>
+                                    <td>humptydumpty@gmail.com</td>
+                                    <td>100</td>
+                                    <td>50</td>
+                                    <td>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold me-1" type="button">Add Friend</a>
+                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold" type="button">View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>99</td>
+                                    <td><img src="assets/img/defaults/default_avatar.jpg" width="100"></td>
+                                    <td>Humpty Dumpty</td>
+                                    <td>humptydumpty@gmail.com</td>
+                                    <td>100</td>
+                                    <td>50</td>
+                                    <td>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold me-1" type="button">Add Friend</a>
+                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold" type="button">View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>98</td>
+                                    <td><img src="assets/img/defaults/default_avatar.jpg" width="100"></td>
+                                    <td>Humpty Dumpty</td>
+                                    <td>humptydumpty@gmail.com</td>
+                                    <td>100</td>
+                                    <td>50</td>
+                                    <td>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold me-1" type="button">Add Friend</a>
+                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold" type="button">View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>97</td>
+                                    <td><img src="assets/img/defaults/default_avatar.jpg" width="100"></td>
+                                    <td>Humpty Dumpty</td>
+                                    <td>humptydumpty@gmail.com</td>
+                                    <td>100</td>
+                                    <td>50</td>
+                                    <td>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold me-1" type="button">Add Friend</a>
+                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold" type="button">View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>96</td>
+                                    <td><img src="assets/img/defaults/default_avatar.jpg" width="100"></td>
+                                    <td>Humpty Dumpty</td>
+                                    <td>humptydumpty@gmail.com</td>
+                                    <td>100</td>
+                                    <td>50</td>
+                                    <td>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold me-1" type="button">Add Friend</a>
+                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold" type="button">View</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                    
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
                 <!-- End of Content -->
                 </div>
@@ -164,6 +268,31 @@
                 <!-- End of Footer -->
             </div>
         </div>
+
+        <script>
+            $('#sl-network').DataTable( {
+                 columnDefs: [
+                     { orderable: false, targets: [1,6] }
+                 ],
+                 order: [[0, 'desc']],
+                 language: {
+                     paginate: {
+                         first:    '«',
+                         previous: '‹',
+                         next:     '›',
+                         last:     '»'
+                     },
+                     aria: {
+                         paginate: {
+                             first:    'First',
+                             previous: 'Previous',
+                             next:     'Next',
+                             last:     'Last'
+                         }
+                     }
+                 }
+             });
+         </script>
 
         <script type="text/javascript" src="assets/js/jquery-3.6.0.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
