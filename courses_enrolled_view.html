@@ -116,10 +116,180 @@
 
                 <div class="container-fluid px-lg-5 p-3 min-vh-100">
                 <!-- Start of Content -->
+                    <div class="courses_my my-4">
 
+                        <div class="p-1 pt-3 px-4 mb-4 bg-body-tertiary rounded-2">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="courses_enrolled.html">Enrolled Courses</a></li>
+                                <li class="breadcrumb-item active" aria-current="page"><a href="courses_enrolled_view.html">Introduction to HTML and CSS</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+
+                        <div class="bg-body-tertiary rounded-3">
+                            <div class="course-heading p-5" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.9) 100%), url('assets/img/cards/card_5.png');">
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <img class="img-fluid rounded" src="assets/img/cards/card_5.png" width="100%">
+                                    </div>
+                      
+                                    <div class="col-md-8">
+                                        <div class="course-details">
+                                            <h5 class="fw-semibold"><span class="badge text-bg-success">Web Development</span></h5>
+                                            <h4 class="card-title fw-bold">Laravel 10</h4><hr>
+                                            <h5>Instructor: Bethy Logan</h5>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                                            <span class="badge text-bg-light">Advanced</span>
+                                        </div>
+
+                                        <div class="course-other-details text-light mt-3">
+                                            <small><i class="fas fa-user-friends"></i> 150 &nbsp; </small> 
+                                            <small><i class="fas fa-star"></i> 4.5 &nbsp; </small> 
+                                            <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 &nbsp; </small> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="course-content p-4">
+
+                                <div class="d-flex justify-content-start">
+                                    <button class="btn btn-sm btn-danger me-1" data-bs-toggle="modal" data-bs-target="#unenrollCourse">Unenroll Course</button>
+                                </div>
+                                
+                                <div class="course-body my-4">
+                                    <nav class="category-nav my-4">
+                                        <ul class="nav nav-pills nav-justified">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">Posts</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Resources</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Students Enrolled</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Instructor Profile</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+
+                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    
+                    </div>
+
+
+                    <div class="other-courses mt-4 mb-3">
+
+                        <div class="row">
+                            <h3 class="fw-bold my-4"> <span class="badge text-bg-dark">YOUR OTHER ENROLLED COURSES</span> </h3>
+
+                            <!-- Course Card -->
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="card shadow">
+                                    <a href="courses_my_view.html">
+                                        <div class="card-thumbnail">
+                                            <img src="assets/img/cards/card_6.png" class="card-img-top">
+                                        </div>
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="course-details">
+                                            <small class="fw-semibold text-success">UI/UX Design</small>
+                                            <h5 class="card-title fw-bold">Introduction to Figma</h5><hr>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                                            <span class="badge text-bg-dark">Beginner</span>
+                                        </div>
+
+                                        <div class="course-other-details text-muted mt-3">
+                                            <small><i class="fas fa-user-friends"></i> 150 &nbsp; </small> 
+                                            <small><i class="fas fa-star"></i> 4.5 &nbsp; </small> 
+                                            <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 &nbsp; </small> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="card shadow">
+                                    <a href="courses_my_view.html">
+                                        <div class="card-thumbnail">
+                                            <img src="assets/img/cards/card_7.jpg" class="card-img-top">
+                                        </div>
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="course-details">
+                                            <small class="fw-semibold text-success">Video Editing</small>
+                                            <h5 class="card-title fw-bold">Adobe Premiere Pro</h5><hr>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                                            <span class="badge text-bg-dark">Intermediate</span>
+                                        </div>
+
+                                        <div class="course-other-details text-muted mt-3">
+                                            <small><i class="fas fa-user-friends"></i> 150 &nbsp; </small> 
+                                            <small><i class="fas fa-star"></i> 4.5 &nbsp; </small> 
+                                            <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 &nbsp; </small> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                <div class="card shadow">
+                                    <a href="courses_my_view.html">
+                                        <div class="card-thumbnail">
+                                            <img src="assets/img/cards/card_8.jpg" class="card-img-top">
+                                        </div>
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="course-details">
+                                            <small class="fw-semibold text-success">Language and Speech</small>
+                                            <h5 class="card-title fw-bold">Extemporaneous Speaking</h5><hr>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+                                            <span class="badge text-bg-dark">Intermediate</span>
+                                        </div>
+
+                                        <div class="course-other-details text-muted mt-3">
+                                            <small><i class="fas fa-user-friends"></i> 150 &nbsp; </small> 
+                                            <small><i class="fas fa-star"></i> 4.5 &nbsp; </small> 
+                                            <small><i class="far fa-calendar-alt"></i> &nbsp; 12/06/2023 &nbsp; </small> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
 
                 <!-- End of Content -->
                 </div>
+                
+                <!-- Unenroll Course Modal -->
+                <div class="modal fade" id="unenrollCourse" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fw-bold fs-5" id="staticBackdropLabel">Unenroll Course</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p> Are you sure you want to unenroll this course? </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success rounded-pill fw-bold me-1" type="submit"> Yes</button>
+                                <button class="btn btn-danger rounded-pill fw-bold" type="button" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
 
                 <!-- Start of Footer -->
                 <footer class="sl-footer-main mt-auto">
