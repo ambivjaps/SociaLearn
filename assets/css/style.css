@@ -426,7 +426,8 @@ body {
 
 .course-header-preview {
 	object-fit: cover;
-	height: 50px;
+	width: 200px;
+	height: 200px;
 }
 
 .profile-banner img {
