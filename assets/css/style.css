@@ -424,10 +424,15 @@ body {
 	color: #FFFFFF;
 }
 
-.profile-banner img {
+.course-header-preview {
 	object-fit: cover;
 	width: 150px;
 	height: 150px;
+}
+
+.profile-banner img {
+	object-fit: cover;
+	height: 50px;
 }
 
 .field-req label:after {
