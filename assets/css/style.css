@@ -245,88 +245,10 @@ body {
 	color: #FFFFFF !important;
 }
 
-/* Tabs */
-
-.bta-tab-menu .nav-link {
-	color: #000000 !important;
-	font-weight: bold;
-}
-
-.bta-tab-menu .nav-link.active, .bta-tab-menu .nav-link.active:hover {
-	background-color: #f5bb00 !important;
-	border-color: #f5bb00 !important;
-	color: #000000 !important;
-}
-
-.bta-tab-menu .nav-link:hover{
-	background-color: #404040 !important;
-	border-color: #404040 !important;
-	color: #f5bb00 !important;
-}
-
-/* Ticket Menu */
-
-.bta-tickets-nav {
-	z-index: 98 !important; 
-	top: 56px !important;
-	
-	font-weight: 700;
-	font-size: 14px;
-
-	padding: 2px;
-}
-
-.bta-col-nav {
-	font-weight: 700;
-	font-size: 15px;
-}
-
-.bta-tickets-nav .nav-item {
-	padding: 5px;
-}
-
-.bta-col-nav .nav-item {
-	padding: 2px;
-}
-
-.bta-col-nav .nav-item h5 {
-	font-weight: 700;
-}
-
-.bta-tickets-nav .nav-link {
-	padding: 5px;
-}
-
-.bta-col-nav .nav-link {
-	padding: 10px;
-}
-
-.bta-tickets-nav .nav-link, .bta-col-nav .nav-link {
-	border-radius: 20px;
-	color: #000000;
-}
-
-.bta-tickets-nav .nav-link.active, .bta-tickets-nav .nav-link:hover {
-	background-color: #000000;
-	color: #f5bb00 !important;
-}
-
-.bta-col-nav .nav-link.active {
-	background-color: #f5bb00;
-	color: #000000 !important;
-}
-
-.bta-col-nav .nav-link:hover {
-	background-color: #404040;
-	color: #f5bb00 !important;
-}
-
-.bta-tickets-nav .nav-link:hover, .bta-col-nav .nav-link:hover {
-	transition: .2s;
-}
-
-.bta-col-nav .nav-link:focus {
-	color: #000000;
+.add-resource {
+	padding: 75px 0;
+	text-align: center;
+	font-size: 100px;
 }
 
 /* Page Navigation */
