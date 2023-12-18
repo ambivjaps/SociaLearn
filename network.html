@@ -144,8 +144,8 @@
                                     <td>50</td>
                                     <td>
                                         <div class="d-flex justify-content-end">
-                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold me-1" type="button">Add Friend</a>
-                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold me-1" type="button">Message</a>
+                                            <button class="btn btn-sm btn-dark rounded-3 fw-bold me-1" type="button">Add Friend</button>
+                                            <button class="btn btn-sm btn-dark rounded-3 fw-bold me-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#message">Message</button>
                                             <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold" type="button">View</a>
                                         </div>
                                     </td>
@@ -165,56 +165,61 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td>98</td>
-                                    <td><img src="assets/img/defaults/default_avatar.jpg" width="100" class="rounded-circle"></td>
-                                    <td>Humpty Dumpty</td>
-                                    <td>humptydumpty@gmail.com</td>
-                                    <td>100</td>
-                                    <td>50</td>
-                                    <td>
-                                        <div class="d-flex justify-content-end">
-                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold me-1" type="button">Add Friend</a>
-                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold me-1" type="button">Message</a>
-                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold" type="button">View</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>97</td>
-                                    <td><img src="assets/img/defaults/default_avatar.jpg" width="100" class="rounded-circle"></td>
-                                    <td>Humpty Dumpty</td>
-                                    <td>humptydumpty@gmail.com</td>
-                                    <td>100</td>
-                                    <td>50</td>
-                                    <td>
-                                        <div class="d-flex justify-content-end">
-                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold me-1" type="button">Add Friend</a>
-                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold me-1" type="button">Message</a>
-                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold" type="button">View</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>96</td>
-                                    <td><img src="assets/img/defaults/default_avatar.jpg" width="100" class="rounded-circle"></td>
-                                    <td>Humpty Dumpty</td>
-                                    <td>humptydumpty@gmail.com</td>
-                                    <td>100</td>
-                                    <td>50</td>
-                                    <td>
-                                        <div class="d-flex justify-content-end">
-                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold me-1" type="button">Add Friend</a>
-                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold me-1" type="button">Message</a>
-                                            <a href="#" class="btn btn-sm btn-dark rounded-3 fw-bold" type="button">View</a>
-                                        </div>
-                                    </td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
            
                 <!-- End of Content -->
+                </div>
+
+                <!-- Message -->
+                <div class="offcanvas offcanvas-end offcanvas-window" data-bs-backdrop="static" tabindex="-1" id="message">
+                    <div class="offcanvas-header bg-success text-light">
+                        <button type="button" class="btn-close btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <h5 class="fw-bold"><i class="fas fa-comment-dots"></i> MESSAGE CLITO</h5>
+                    </div>
+                    <div class="offcanvas-body p-0">
+                        <div class="d-flex flex-align-start flex-column h-100 w-100">
+                            <div class="offcanvas-content w-100 h-100 mb-auto overflow-y-auto p-3">
+                            <!-- Message Body -->
+                                <div class="msg-date text-center opacity-50">
+                                    <small>JUNE 30, 2023</small>
+                                </div>
+                                    
+                                <div class="correspond-msg d-flex gap-2 w-100 justify-content-end mb-3">
+                                    <img src="assets/img/defaults/default_avatar.jpg" class="rounded-circle msg-avatar">
+                                    <div class="msg-from-bg rounded-3 p-2 text-start w-100">
+                                        <h6 class="mb-0">
+                                            Shet.
+                                        </h6>
+                                        <small class="opacity-50 text-nowrap">9:00AM</small>
+                                    </div>
+                                    <small class="opacity-50 text-nowrap"><i class="fas fa-check-circle"></i></small>
+                                </div>
+
+                                <div class="correspond-msg d-flex gap-2 w-100 justify-content-end mb-3">
+                                    <small class="opacity-50 text-nowrap"><i class="far fa-check-circle"></i></small>
+                                    <div class="msg-sent-bg rounded-3 p-2 text-end w-100">
+                                        <h6 class="mb-0">
+                                            Fuck.
+                                        </h6>
+                                        <small class="opacity-50 text-nowrap">9:00AM</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Footer -->
+                            <div class="correspond-footer">
+                                <div class="align-self-center p-3">
+                                    <form action="#" method="POST">
+                                        <div class="input-group mt-1">
+                                            <textarea class="form-control" id="#" rows="4" placeholder="Type a message here..."></textarea>
+                                            <button class="btn btn-success fw-bold" type="submit">Send</button>
+                                        </div>
+                                    </form>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Start of Footer -->
